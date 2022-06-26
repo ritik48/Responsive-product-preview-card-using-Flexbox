@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Practice
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: hsl(30, 38%, 92%);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 70%;
+      height: 400px;
+      max-width: 700px;
+      min-width: 500px;
+
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .contents {
+      flex: 1;
+      background-color: white;
+      font-size: 25px;
+      display: flex;
+      flex-direction: column;
+      
+      padding: 25px 28px;
+    }
+
+    .image {
+      width: 50%;
+
+    }
+    .items:nth-of-type(1) {
+      font-family: Montserrat;
+      font-weight: 500;
+      letter-spacing: 3px;
+      color: hsl(228, 12%, 48%);
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+    .items:nth-of-type(2) {
+      font-family: Fraunces;
+      font-weight: 700;
+      color: hsl(212, 21%, 14%);
+      padding-top: 5px;
+      font-size: 28px;
+      line-height: 25px;
+    }
+    .items:nth-of-type(3) {
+      font-family: Montserrat;
+      font-size: 14px;
+      color: hsl(228, 12%, 48%);
+      margin-top: 15px;
+      line-height: 20px;
+    }
+    .items:nth-of-type(4) {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 25px;
+      align-items: center;
+      
+    }
+    .items:nth-of-type(5) {
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+      position: relative;
+    }
+    .cart-icon {
+      width: 15px;
+      position: absolute;
+      top: 36px;
+      left: 45px;
+    }
+    
+    button {
+      border: none;
+      background-color: hsl(158, 36%, 37%);
+      color: white;
+      width: 100%;
+      padding: 10px;
+      font-family: Montserrat;
+      border-radius: 5px;
+      
+    }
+    button:hover {
+      background-color: hsl(156, 36%, 19%);
+    }
+    .price, .discounted-price {
+      font-family: Fraunces;
+    }
+    .discounted-price {
+      font-size: 14px;
+      color: hsl(228, 12%, 48%);
+      text-decoration:line-through;
+      padding-right: 40px;
+    }
+    .price {
+      color: hsl(158, 35%, 33%);
+    }
+    @media (max-width: 600px)
+    {
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin: 20px 20px;
+        height: 95vh;
+        
+      }
+
+      .image{
+        width: 100%;
+        height: 45%;
+        background-image: url(../product-preview-design/images/image-product-mobile.jpg);
+        
+      }
+      .discounted-price {
+      padding-right: 150px;
+      }
+      .cart-icon {
+        left: 140px;
+        top: 45px;
+      }
+      button {
+        padding: 20px;
+      }
+    }
+
+  </style>
+
+<body>
+  <div class="container">
+    <img src="../product-preview-design/images/image-product-desktop.jpg" alt="" class="image">
+    <div class="contents">
+      <div class="items">PERFUME</div>
+      <div class="items">
+        Gabrielle Essence Eau De Parfum
+      </div>
+      <div class="items">
+        A floral, solar and voluptuous interpretation composed by Oliver Poige, Perfumer-Creator for the House of CHANEL
+      </div>
+      <div class="items">
+        <div class="price">
+          $149.99
+        </div>
+        <div class="discounted-price">
+          $169.99
+        </div>
+      </div>
+      <div class="items">
+        <button>
+          Add to Cart
+        </button>
+     
+        <img src="../product-preview-design/images/cart.png" alt="" class="cart-icon">
+  
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</head>
+
+</html>
